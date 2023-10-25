@@ -7,6 +7,7 @@ import { Provider } from 'react-redux';
 import store from './src/redux/store'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Greetings from './components/Greetings';
+import { getGreetings } from "./src/redux/greetings/greetingsSlice";
 
 
 function App() {
@@ -21,6 +22,8 @@ function App() {
     </>
   );
 }
+
+store.dispatch(getGreetings());
 
 ReactDOM.render(
   <Provider store={store}>
