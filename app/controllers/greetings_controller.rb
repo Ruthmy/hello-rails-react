@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # This controller handles API requests for greetings.
 class GreetingsController < ApplicationController
   def api
